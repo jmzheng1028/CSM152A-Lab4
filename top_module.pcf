@@ -1,0 +1,248 @@
+//! **************************************************************************
+// Written by: Map P.68d on Tue Nov 29 11:45:23 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "hs" LOCATE = SITE "A8" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "left" LOCATE = SITE "C4" LEVEL 1;
+COMP "AN<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "AN<1>" LOCATE = SITE "N15" LEVEL 1;
+COMP "AN<2>" LOCATE = SITE "P18" LEVEL 1;
+COMP "AN<3>" LOCATE = SITE "P17" LEVEL 1;
+COMP "blue<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "blue<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "right" LOCATE = SITE "D9" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "SEG<0>" LOCATE = SITE "T17" LEVEL 1;
+COMP "SEG<1>" LOCATE = SITE "T18" LEVEL 1;
+COMP "SEG<2>" LOCATE = SITE "U17" LEVEL 1;
+COMP "SEG<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "SEG<4>" LOCATE = SITE "M14" LEVEL 1;
+COMP "SEG<5>" LOCATE = SITE "N14" LEVEL 1;
+COMP "SEG<6>" LOCATE = SITE "L14" LEVEL 1;
+COMP "Led<0>" LOCATE = SITE "U16" LEVEL 1;
+COMP "Led<1>" LOCATE = SITE "V16" LEVEL 1;
+COMP "Led<2>" LOCATE = SITE "U15" LEVEL 1;
+COMP "Led<3>" LOCATE = SITE "V15" LEVEL 1;
+COMP "Led<4>" LOCATE = SITE "M11" LEVEL 1;
+COMP "Led<5>" LOCATE = SITE "N11" LEVEL 1;
+COMP "Led<6>" LOCATE = SITE "R11" LEVEL 1;
+COMP "Led<7>" LOCATE = SITE "T11" LEVEL 1;
+COMP "red<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "red<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "red<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "green<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "green<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "green<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "hs_rst" LOCATE = SITE "C9" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "hs_debouncer/counter_1" BEL
+        "hs_debouncer/counter_2" BEL "hs_debouncer/counter_3" BEL
+        "hs_debouncer/counter_4" BEL "hs_debouncer/counter_7" BEL
+        "hs_debouncer/counter_5" BEL "hs_debouncer/counter_6" BEL
+        "hs_debouncer/counter_10" BEL "hs_debouncer/counter_8" BEL
+        "hs_debouncer/counter_9" BEL "hs_debouncer/counter_13" BEL
+        "hs_debouncer/counter_11" BEL "hs_debouncer/counter_12" BEL
+        "hs_debouncer/counter_14" BEL "hs_debouncer/counter_15" BEL
+        "hs_rst_debouncer/counter_2" BEL "hs_rst_debouncer/counter_1" BEL
+        "hs_rst_debouncer/counter_5" BEL "hs_rst_debouncer/counter_3" BEL
+        "hs_rst_debouncer/counter_4" BEL "hs_rst_debouncer/counter_8" BEL
+        "hs_rst_debouncer/counter_6" BEL "hs_rst_debouncer/counter_7" BEL
+        "hs_rst_debouncer/counter_11" BEL "hs_rst_debouncer/counter_9" BEL
+        "hs_rst_debouncer/counter_10" BEL "hs_rst_debouncer/counter_14" BEL
+        "hs_rst_debouncer/counter_12" BEL "hs_rst_debouncer/counter_13" BEL
+        "hs_rst_debouncer/counter_15" BEL "rst_debouncer/counter_3" BEL
+        "rst_debouncer/counter_1" BEL "rst_debouncer/counter_2" BEL
+        "rst_debouncer/counter_6" BEL "rst_debouncer/counter_4" BEL
+        "rst_debouncer/counter_5" BEL "rst_debouncer/counter_9" BEL
+        "rst_debouncer/counter_7" BEL "rst_debouncer/counter_8" BEL
+        "rst_debouncer/counter_12" BEL "rst_debouncer/counter_10" BEL
+        "rst_debouncer/counter_11" BEL "rst_debouncer/counter_15" BEL
+        "rst_debouncer/counter_13" BEL "rst_debouncer/counter_14" BEL
+        "hs_debouncer/counter_0" BEL "hs_rst_debouncer/counter_0" BEL
+        "rst_debouncer/counter_0" BEL "divider/pixel_count_0" BEL
+        "divider/platform_count_18" BEL "divider/platform_count_17" BEL
+        "divider/platform_count_16" BEL "divider/platform_count_15" BEL
+        "divider/platform_count_14" BEL "divider/platform_count_13" BEL
+        "divider/platform_count_12" BEL "divider/platform_count_11" BEL
+        "divider/platform_count_10" BEL "divider/platform_count_9" BEL
+        "divider/platform_count_8" BEL "divider/platform_count_7" BEL
+        "divider/platform_count_6" BEL "divider/platform_count_5" BEL
+        "divider/platform_count_4" BEL "divider/platform_count_3" BEL
+        "divider/platform_count_2" BEL "divider/platform_count_1" BEL
+        "divider/platform_count_0" BEL "divider/doodle_count_17" BEL
+        "divider/doodle_count_16" BEL "divider/doodle_count_15" BEL
+        "divider/doodle_count_14" BEL "divider/doodle_count_13" BEL
+        "divider/doodle_count_12" BEL "divider/doodle_count_11" BEL
+        "divider/doodle_count_10" BEL "divider/doodle_count_9" BEL
+        "divider/doodle_count_8" BEL "divider/doodle_count_7" BEL
+        "divider/doodle_count_6" BEL "divider/doodle_count_5" BEL
+        "divider/doodle_count_4" BEL "divider/doodle_count_3" BEL
+        "divider/doodle_count_2" BEL "divider/doodle_count_1" BEL
+        "divider/points_count_22" BEL "divider/points_count_21" BEL
+        "divider/points_count_20" BEL "divider/points_count_19" BEL
+        "divider/points_count_18" BEL "divider/points_count_17" BEL
+        "divider/points_count_16" BEL "divider/points_count_15" BEL
+        "divider/points_count_14" BEL "divider/points_count_13" BEL
+        "divider/points_count_12" BEL "divider/points_count_11" BEL
+        "divider/points_count_10" BEL "divider/points_count_9" BEL
+        "divider/points_count_8" BEL "divider/points_count_7" BEL
+        "divider/points_count_6" BEL "divider/points_count_5" BEL
+        "divider/points_count_4" BEL "divider/move_count_6" BEL
+        "divider/move_count_5" BEL "divider/move_count_4" BEL
+        "divider/move_count_3" BEL "divider/move_count_2" BEL
+        "divider/move_count_1" BEL "divider/move_count_0" BEL
+        "divider/platform_clk_reg" BEL "divider/PLATFORM_FACTOR_18" BEL
+        "divider/PLATFORM_FACTOR_17" BEL "divider/PLATFORM_FACTOR_16" BEL
+        "divider/PLATFORM_FACTOR_15" BEL "divider/PLATFORM_FACTOR_14" BEL
+        "divider/PLATFORM_FACTOR_13" BEL "divider/PLATFORM_FACTOR_12" BEL
+        "divider/PLATFORM_FACTOR_11" BEL "divider/PLATFORM_FACTOR_10" BEL
+        "divider/PLATFORM_FACTOR_9" BEL "divider/PLATFORM_FACTOR_8" BEL
+        "divider/PLATFORM_FACTOR_7" BEL "divider/PLATFORM_FACTOR_6" BEL
+        "divider/PLATFORM_FACTOR_5" BEL "divider/PLATFORM_FACTOR_4" BEL
+        "divider/PLATFORM_FACTOR_3" BEL "divider/points_clk_reg" BEL
+        "divider/doodle_clk_reg" BEL "divider/move_clk_reg" BEL
+        "highscore_mod/highscore_31" BEL "highscore_mod/highscore_30" BEL
+        "highscore_mod/highscore_29" BEL "highscore_mod/highscore_28" BEL
+        "highscore_mod/highscore_27" BEL "highscore_mod/highscore_26" BEL
+        "highscore_mod/highscore_25" BEL "highscore_mod/highscore_24" BEL
+        "highscore_mod/highscore_23" BEL "highscore_mod/highscore_22" BEL
+        "highscore_mod/highscore_21" BEL "highscore_mod/highscore_20" BEL
+        "highscore_mod/highscore_19" BEL "highscore_mod/highscore_18" BEL
+        "highscore_mod/highscore_17" BEL "highscore_mod/highscore_16" BEL
+        "highscore_mod/highscore_15" BEL "highscore_mod/highscore_14" BEL
+        "highscore_mod/highscore_13" BEL "highscore_mod/highscore_12" BEL
+        "highscore_mod/highscore_11" BEL "highscore_mod/highscore_10" BEL
+        "highscore_mod/highscore_9" BEL "highscore_mod/highscore_8" BEL
+        "highscore_mod/highscore_7" BEL "highscore_mod/highscore_6" BEL
+        "highscore_mod/highscore_5" BEL "highscore_mod/highscore_4" BEL
+        "highscore_mod/highscore_3" BEL "highscore_mod/highscore_2" BEL
+        "highscore_mod/highscore_1" BEL "highscore_mod/highscore_0" BEL
+        "display_mux/val_15" BEL "display_mux/val_14" BEL "display_mux/val_13"
+        BEL "display_mux/val_12" BEL "display_mux/val_11" BEL
+        "display_mux/val_10" BEL "display_mux/val_9" BEL "display_mux/val_8"
+        BEL "display_mux/val_7" BEL "display_mux/val_6" BEL
+        "display_mux/val_5" BEL "display_mux/val_4" BEL "display_mux/val_3"
+        BEL "display_mux/val_2" BEL "display_mux/val_1" BEL
+        "display_mux/val_0" BEL "points_display/clkCount_15" BEL
+        "points_display/clkCount_14" BEL "points_display/clkCount_13" BEL
+        "points_display/clkCount_12" BEL "points_display/clkCount_11" BEL
+        "points_display/clkCount_10" BEL "points_display/clkCount_9" BEL
+        "points_display/clkCount_8" BEL "points_display/clkCount_7" BEL
+        "points_display/clkCount_6" BEL "points_display/clkCount_5" BEL
+        "points_display/clkCount_4" BEL "points_display/clkCount_3" BEL
+        "points_display/clkCount_2" BEL "points_display/clkCount_1" BEL
+        "points_display/clkCount_0" BEL "points_display/DCLK" BEL
+        "points_display/BtoBCD/STATE_FSM_FFd1" BEL
+        "points_display/BtoBCD/STATE_FSM_FFd2" BEL
+        "points_display/BtoBCD/shiftCount_4" BEL
+        "points_display/BtoBCD/shiftCount_3" BEL
+        "points_display/BtoBCD/shiftCount_2" BEL
+        "points_display/BtoBCD/shiftCount_1" BEL
+        "points_display/BtoBCD/shiftCount_0" BEL
+        "points_display/BtoBCD/STATE_FSM_FFd3" BEL
+        "points_display/BtoBCD/BCDOUT_15" BEL
+        "points_display/BtoBCD/BCDOUT_14" BEL
+        "points_display/BtoBCD/BCDOUT_13" BEL
+        "points_display/BtoBCD/BCDOUT_12" BEL
+        "points_display/BtoBCD/BCDOUT_11" BEL
+        "points_display/BtoBCD/BCDOUT_10" BEL "points_display/BtoBCD/BCDOUT_9"
+        BEL "points_display/BtoBCD/BCDOUT_8" BEL
+        "points_display/BtoBCD/BCDOUT_7" BEL "points_display/BtoBCD/BCDOUT_6"
+        BEL "points_display/BtoBCD/BCDOUT_5" BEL
+        "points_display/BtoBCD/BCDOUT_4" BEL "points_display/BtoBCD/BCDOUT_3"
+        BEL "points_display/BtoBCD/BCDOUT_2" BEL
+        "points_display/BtoBCD/BCDOUT_1" BEL "points_display/BtoBCD/BCDOUT_0"
+        BEL "points_display/BtoBCD/tmpSR_27" BEL
+        "points_display/BtoBCD/tmpSR_26" BEL "points_display/BtoBCD/tmpSR_25"
+        BEL "points_display/BtoBCD/tmpSR_24" BEL
+        "points_display/BtoBCD/tmpSR_23" BEL "points_display/BtoBCD/tmpSR_22"
+        BEL "points_display/BtoBCD/tmpSR_21" BEL
+        "points_display/BtoBCD/tmpSR_20" BEL "points_display/BtoBCD/tmpSR_19"
+        BEL "points_display/BtoBCD/tmpSR_18" BEL
+        "points_display/BtoBCD/tmpSR_17" BEL "points_display/BtoBCD/tmpSR_16"
+        BEL "points_display/BtoBCD/tmpSR_15" BEL
+        "points_display/BtoBCD/tmpSR_14" BEL "points_display/BtoBCD/tmpSR_13"
+        BEL "points_display/BtoBCD/tmpSR_12" BEL
+        "points_display/BtoBCD/tmpSR_11" BEL "points_display/BtoBCD/tmpSR_10"
+        BEL "points_display/BtoBCD/tmpSR_9" BEL
+        "points_display/BtoBCD/tmpSR_8" BEL "points_display/BtoBCD/tmpSR_7"
+        BEL "points_display/BtoBCD/tmpSR_6" BEL
+        "points_display/BtoBCD/tmpSR_5" BEL "points_display/BtoBCD/tmpSR_4"
+        BEL "points_display/BtoBCD/tmpSR_3" BEL
+        "points_display/BtoBCD/tmpSR_2" BEL "points_display/BtoBCD/tmpSR_1"
+        BEL "points_display/BtoBCD/tmpSR_0" BEL "rand_mod1/rand_hpos_9" BEL
+        "rand_mod1/rand_hpos_8" BEL "rand_mod1/rand_hpos_7" BEL
+        "rand_mod1/rand_hpos_5" BEL "rand_mod1/rand_hpos_4" BEL
+        "rand_mod1/rand_hpos_3" BEL "rand_mod1/new_bit" BEL
+        "hs_debouncer/button_state" BEL "hs_rst_debouncer/button_state" BEL
+        "rst_debouncer/button_state" BEL "rand_mod1/lfsr_15_C_15" BEL
+        "rand_mod1/lfsr_15_P_15" BEL "rand_mod1/lfsr_0_C_0" BEL
+        "rand_mod1/lfsr_0_P_0" BEL "rand_mod1/lfsr_1_C_1" BEL
+        "rand_mod1/lfsr_1_P_1" BEL "rand_mod1/lfsr_2_C_2" BEL
+        "rand_mod1/lfsr_2_P_2" BEL "rand_mod1/lfsr_3_C_3" BEL
+        "rand_mod1/lfsr_3_P_3" BEL "rand_mod1/lfsr_4_C_4" BEL
+        "rand_mod1/lfsr_4_P_4" BEL "rand_mod1/lfsr_5_C_5" BEL
+        "rand_mod1/lfsr_5_P_5" BEL "rand_mod1/lfsr_6_C_6" BEL
+        "rand_mod1/lfsr_6_P_6" BEL "rand_mod1/lfsr_7_C_7" BEL
+        "rand_mod1/lfsr_7_P_7" BEL "rand_mod1/lfsr_8_C_8" BEL
+        "rand_mod1/lfsr_8_P_8" BEL "rand_mod1/lfsr_9_C_9" BEL
+        "rand_mod1/lfsr_9_P_9" BEL "rand_mod1/lfsr_10_C_10" BEL
+        "rand_mod1/lfsr_10_P_10" BEL "rand_mod1/lfsr_11_C_11" BEL
+        "rand_mod1/lfsr_11_P_11" BEL "rand_mod1/lfsr_12_C_12" BEL
+        "rand_mod1/lfsr_12_P_12" BEL "rand_mod1/lfsr_13_C_13" BEL
+        "rand_mod1/lfsr_13_P_13" BEL "rand_mod1/lfsr_14_C_14" BEL
+        "rand_mod1/lfsr_14_P_14" BEL "clk_BUFGP/BUFG";
+TIMEGRP TO_rand_mod1lfsr_15_LDC = BEL "rand_mod1/lfsr_15_LDC";
+TIMEGRP TO_rand_mod1lfsr_0_LDC1 = BEL "rand_mod1/lfsr_0_LDC1";
+TIMEGRP TO_rand_mod1lfsr_1_LDC = BEL "rand_mod1/lfsr_1_LDC";
+TIMEGRP TO_rand_mod1lfsr_2_LDC = BEL "rand_mod1/lfsr_2_LDC";
+TIMEGRP TO_rand_mod1lfsr_3_LDC1 = BEL "rand_mod1/lfsr_3_LDC1";
+TIMEGRP TO_rand_mod1lfsr_4_LDC = BEL "rand_mod1/lfsr_4_LDC";
+TIMEGRP TO_rand_mod1lfsr_5_LDC = BEL "rand_mod1/lfsr_5_LDC";
+TIMEGRP TO_rand_mod1lfsr_6_LDC = BEL "rand_mod1/lfsr_6_LDC";
+TIMEGRP TO_rand_mod1lfsr_7_LDC = BEL "rand_mod1/lfsr_7_LDC";
+TIMEGRP TO_rand_mod1lfsr_8_LDC1 = BEL "rand_mod1/lfsr_8_LDC1";
+TIMEGRP TO_rand_mod1lfsr_9_LDC1 = BEL "rand_mod1/lfsr_9_LDC1";
+TIMEGRP TO_rand_mod1lfsr_10_LDC = BEL "rand_mod1/lfsr_10_LDC";
+TIMEGRP TO_rand_mod1lfsr_11_LDC = BEL "rand_mod1/lfsr_11_LDC";
+TIMEGRP TO_rand_mod1lfsr_12_LDC = BEL "rand_mod1/lfsr_12_LDC";
+TIMEGRP TO_rand_mod1lfsr_13_LDC = BEL "rand_mod1/lfsr_13_LDC";
+TIMEGRP TO_rand_mod1lfsr_14_LDC = BEL "rand_mod1/lfsr_14_LDC";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+TS_TO_rand_mod1lfsr_15_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_15_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_0_LDC1 = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_0_LDC1"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_1_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_1_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_2_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_2_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_3_LDC1 = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_3_LDC1"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_4_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_4_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_5_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_5_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_6_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_6_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_7_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_7_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_8_LDC1 = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_8_LDC1"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_9_LDC1 = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_9_LDC1"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_10_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_10_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_11_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_11_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_12_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_12_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_13_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_13_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+TS_TO_rand_mod1lfsr_14_LDC = MAXDELAY TO TIMEGRP "TO_rand_mod1lfsr_14_LDC"
+        TS_sys_clk_pin DATAPATHONLY;
+SCHEMATIC END;
+
